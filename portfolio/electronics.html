@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+
+
+
+<style>
+
+/*
+  Sets whole website background to be blue with no margins 
+  */
+  .body{
+    background-color: #bef1f7;
+    margin: 0;
+  }
+  
+
+
+  /*
+  Header/ Toolbar CSS
+  */
+    /*
+    Creates a header with padding
+    */
+    .header{
+      background-color: #69c0e2;
+      padding: 10px;
+    }
+
+    /*
+    Creates a toolbar using a grid that has 8 columns with certain specifications 
+    */
+    .toolbar{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*
+    Logo specifications to align it to the left 
+    */
+    .logo{
+      vertical-align: top;
+      width: 90px;
+      height: 90px;
+      margin-left: 80px;
+      margin-right: 200px;
+    }
+
+    /*
+    Outside logo specifications to align them to the right
+    */
+    .git-logo, .insta-logo{
+      width: 40px;
+      height: 40px;
+    }
+
+      /*
+      Outside logo specification for Linkdin as imported image has differenet specifications than above 
+      */
+    .link-logo{
+      width: 30px;
+      height: 30px;
+    }
+    
+    /*
+    Sets toolbar buttons to have certain specifications
+    */
+    .home-b, .about-b, .portfolio-b, .contact-b{
+      background-color: #69c0e2;
+      border: none;
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+ 
+
+ /*
+  Footer CSS
+  */
+    /*
+    Creates a footer with padding
+    */
+    .footer{
+      background-color: #69c0e2;
+      padding: 50px;
+    }
+
+    /*
+    Creates a quick-access using a grid  
+    */
+    .quick-access{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 1fr 3fr; 
+    }
+
+    /*
+    Creates quick-links grid
+    */
+    .quick-links-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*
+    Customizes quick-link text
+    */
+    .quick-link-text{
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+
+
+
+  /*
+  Changes mouse to a pointer when hovered on and underlines the text
+  */
+  .home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
+  .contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
+  .thread-image:hover, .equalizer-image:hover, .movie-image:hover,
+  .lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .15s;
+  }
+
+
+
+
+</style>
+
+
+
+
+
+
+<html>
+  <head>
+    <title>Electronics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+
+
+    <!-- 
+        This creates a toolbar that sits at the header of the website
+        Created using a grid 
+      -->
+    <div class="header">
+      <div class="toolbar">
+        <a href="../home.html">
+          <div>
+            <image class="logo" src="toolbar-images/logo.png">
+          </div>
+        </a>
+        <a href="../home.html">
+          <div>
+            <button class="home-b">
+              home
+            </button>
+          </div>
+        </a>
+        <a href="../about.html">
+          <div>
+            <button class="about-b">
+              about 
+            </button>
+          </div>
+        </a>
+        <a href="../portfolio.html">
+          <div>
+            <button class="portfolio-b">
+              portfolio
+            </button>
+          </div>
+        </a>
+        <a href="../contact.html">
+          <div>
+            <button class="contact-b">
+              contact
+            </button>
+          </div>
+        </a>
+          <div>
+            <a href="https://github.com/mialarkin14" target="_blank">
+              <image class="git-logo" src="toolbar-images/git-logo.png"></image>
+            </a>
+          </div>
+        <div>
+          <a href="https://www.linkedin.com/in/mia-larkin-4885b0250/" target="_blank">
+            <image class="link-logo" src="toolbar-images/link-logo.png"></image>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/shadowillusion14/" target="_blank">
+            <image class="insta-logo" src="toolbar-images/insta-logo.png"></image>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+
+
+
+     
+    <!-- 
+        This creates a quick-access part of the footer of the website
+        Created using a grid 
+      -->
+    <div class="footer">
+        <div class="quick-access">
+          <div>
+            <a href="../home.html">
+              <image class="logo" src="toolbar-images/logo.png"></image>
+            </a>
+          </div>
+          <div class="quick-links-grid">
+            <div>
+              <a style="text-decoration: none" href="../home.html">
+                <p class="quick-link-text">
+                  home
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="code.html">
+                <p class="quick-link-text">
+                  code
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="https://github.com/mialarkin14" target="_blank">
+                <p class="quick-link-text">
+                  github
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="../about.html">
+                <p class="quick-link-text">
+                  about
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="electronics.html">
+                <p class="quick-link-text">
+                  electronics
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="https://www.linkedin.com/in/mia-larkin-4885b0250/" target="_blank">
+                <p class="quick-link-text">
+                  linkedin
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="../portfolio.html">
+                <p class="quick-link-text">
+                  portfolio
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="drawings.html">
+                <p class="quick-link-text">
+                  drawings
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="https://www.instagram.com/shadowillusion14/" target="_blank">
+                <p class="quick-link-text">
+                  instagram
+                </p>
+              </a>
+            </div>
+            <div>
+              <a style="text-decoration: none" href="../contact.html">
+                <p class="quick-link-text">
+                  contact
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </body>
+  </html>

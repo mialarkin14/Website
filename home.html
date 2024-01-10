@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body class="body">
+
+
+    <!-- 
+        This creates a toolbar that sits at the header of the website
+        Created using a grid 
+      -->
+    <div class="header">
+      <div class="toolbar">
+        <a href="home.html">
+          <div>
+            <image class="logo" src="toolbar-images/logo.png">
+          </div>
+        </a>
+        <a href="home.html">
+          <div>
+            <button class="home-b">
+              home
+            </button>
+          </div>
+        </a>
+        <a href="about.html">
+          <div>
+            <button class="about-b">
+              about 
+            </button>
+          </div>
+        </a>
+        <a href="portfolio.html">
+          <div>
+            <button class="portfolio-b">
+              portfolio
+            </button>
+          </div>
+        </a>
+        <a href="contact.html">
+          <div>
+            <button class="contact-b">
+              contact
+            </button>
+          </div>
+        </a>
+          <div>
+            <a href="https://github.com/mialarkin14" target="_blank">
+              <image class="git-logo" src="toolbar-images/git-logo.png"></image>
+            </a>
+          </div>
+        <div>
+          <a href="https://www.linkedin.com/in/mia-larkin-4885b0250/" target="_blank">
+            <image class="link-logo" src="toolbar-images/link-logo.png"></image>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/shadowillusion14/" target="_blank">
+            <image class="insta-logo" src="toolbar-images/insta-logo.png"></image>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+    <!--
+       This imports the home screen image 
+        Allows it to be flexible based on window size using flexbox 
+    -->
+    <div class="home-image" >
+      <image src="home-image.png"></image>
+    </div>
+
+
+    <!-- 
+        This creates the welcome introduction using a grid
+    -->
+    <div class="intro-text">
+      <div>
+        <p class="welcome">
+          Welcome, I'm Mia Larkin!
+        </p>
+      </div>
+      <div class="blurb">
+        <p class="welcome-blurb">
+          Born in China and raised by two Irish parents, I found a passion for STEM in high school! I'm a student at UCONN majoring in Computer Engineering. I have exposure with multiple languages and have designed circuits. 
+        </p>
+        <a style="text-decoration: none" href="about.html">
+          <p class="learn-more">
+            Learn More... __________________
+          </p>
+        </a>
+      </div>
+      <div class="motto">
+        <p>
+          A Personal Motto I live by: 
+        </p>
+        <p>
+          "The past is in the past. Focus on what you can do in the present rather than dwelling on what can't be changed." - Mia Larkin 
+        </p>
+      </div>
+      <div class="calm">
+        <image class="calm-image" src="calm.jpg"></image>
+      </div>
+    </div>
+
+
+    <!--
+        This creates a "Featured Work" section using a grid and flexbox
+    -->
+    <div class="fw-container">
+      <div class="featured-work">
+        <div></div>
+        <div class="featured-text">
+          <p class="featured-work-text">
+            Featured Work ______________
+          </p>
+        </div>
+        <div></div>
+        <div class="equalizer">
+          <image class="equalizer-image" src="featured-images/audio-equalizer.jpg"></image>
+        </div>
+        <div class="movie">
+          <image class="movie-image" src="featured-images/processing-movie.jpeg"></image>
+        </div>
+        <div class="thread">
+          <image class="thread-image" src="featured-images/multithreading.jpg"></image>
+        </div>
+        <div class="equal-text">
+          <p class="equal-actual-text">
+            An audio equalizer with three different bandpass filters. Each bandpass has adjustable gain inducing various effects on 
+            sinusoidal signals. 
+          </p>
+        </div>
+        <div class="movie-text">
+          <p class="movie-actual-text">
+            A processing animation done in Java. Based off of a scene from the movie Despicable Me. Includes user-input based on hotkeys 
+            and mouse-clicks.
+          </p>
+        </div>
+        <div class="thread-text">
+          <p class="thread-actual-text">
+            A guess-my-number game that uses multithreading. Encapulates the idea of producer-consumer threads and includes mutex and
+            wait condtions. 
+          </p>
+        </div>
+        <div class="learn-more-button">
+          <button class="lmb">
+            Learn More About this Project
+          </button>
+        </div>
+        <div class="learn-more-button">
+          <button class="lmb">
+            Learn More About this Project
+          </button>
+        </div>
+        <div class="learn-more-button">
+          <button class="lmb">
+            Learn More About this Project
+          </button>
+        </div>
+        <div></div>
+        <div class="explore">
+          <a href="portfolio.html">
+            <button class="explore-b">
+              Explore More Projects
+            </button>
+          </a>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+
+    <!--
+        This creates a contact/ call to action section
+    -->
+    <div class="contact">
+      <div class="experience">
+        <p class="experience-text">
+          Check out my experience and skills below!
+        </p>
+        <div class="experience-grid">
+          <div>
+            <p class="experiences">
+              ✖ Python
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ C
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ HTML
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ CSS
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ Java
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ Object-Oriented-Programming
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ Systems-Programming
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ Multithreading
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖ Linear Circuit Responses
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖  AC Steady-State Power
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖  Three-Phase Circuits
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖  Passive and Active Circuit Elements
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖  Frequency Responses
+            </p>
+          </div>
+          <div class="experiences">
+            <p>
+              ✖  Basic Laws and Circuit Analysis Techniques 
+            </p>
+          </div>
+        </div>
+        <div class="other-experinces">
+          <a href="resume_2024.pdf" download="">
+            <button class="experinces-button">
+              Want to see my other experiences? Download my most recent resume here ⬇️
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="email">
+        <p class="hammer-wrench">
+          🛠️
+        </p>
+        <p class="email-blurb">
+          Looking for a passionate and skilled computer engineer with excellent communication, leadership, and organization?
+          Contact me using the email below: 
+        </p>
+        <a style="text-decoration: none" href="mailto: mia.larkin1@icloud.com" target="_blank">
+          <p class="actual-email">
+            mia.larkin1@icloud.com
+          </p>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- 
+        This creates a quick-access part of the footer of the website
+        Created using a grid 
+      -->
+    <div class="footer">
+      <div class="quick-access">
+        <div>
+          <a href="home.html">
+            <image class="logo" src="toolbar-images/logo.png"></image>
+          </a>
+        </div>
+        <div class="quick-links-grid">
+          <div>
+            <a style="text-decoration: none" href="home.html">
+              <p class="quick-link-text">
+                home
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="portfolio/code.html">
+              <p class="quick-link-text">
+                code
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="https://github.com/mialarkin14" target="_blank">
+              <p class="quick-link-text">
+                github
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="about.html">
+              <p class="quick-link-text">
+                about
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="portfolio/electronics.html">
+              <p class="quick-link-text">
+                electronics
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="https://www.linkedin.com/in/mia-larkin-4885b0250/" target="_blank">
+              <p class="quick-link-text">
+                linkedin
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="portfolio.html">
+              <p class="quick-link-text">
+                portfolio
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="portfolio/drawings.html">
+              <p class="quick-link-text">
+                drawings
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="https://www.instagram.com/shadowillusion14/" target="_blank">
+              <p class="quick-link-text">
+                instagram
+              </p>
+            </a>
+          </div>
+          <div>
+            <a style="text-decoration: none" href="contact.html">
+              <p class="quick-link-text">
+                contact
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
