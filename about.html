@@ -77,9 +77,90 @@
       font-size: 18px;
     }
 
- 
 
- /*
+
+  /*
+  About introduction CSS
+  */
+    
+    /*
+    Creates a grid for the about me 
+    */
+    .about-intro-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 100px;
+      margin-right: 100px;
+      column-gap: 60px;
+      padding: 70px;
+    }
+
+    /*
+    Creates a vertical grid
+    */
+    .vert-about-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-right: 0px;
+    }
+
+
+    /*
+    Customizes the div for the image
+    */
+    .abt-imag{
+      margin-bottom: 0px;
+    }
+
+    /*
+    Customizes image
+    */
+    .about-image{
+      width: 550px;
+      height: 450px;
+      object-fit: cover;
+      vertical-align: bottom;
+    }
+
+    /*
+    Customizes the about title
+    */
+    .about-title{
+      width: 200px;
+      font-family: Roboto;
+      font-size: 50px;
+      color: #5b5b5b;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 100px;
+    }
+
+    /*
+    Customizes the about blurb
+    */
+    .about-blurb{
+      width: 420px;
+      font-family: Roboto;
+      font-size: 25px;
+      color: #797979;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+
+    /*
+    Customizes about summary
+    */
+    .about-summary{
+      width: 450px;
+      font-family: Roboto;
+      font-size: 23px;
+      color: #797979;
+      font-weight: 200;
+      margin-right: 50px;
+    }
+
+
+  /*
   Footer CSS
   */
     /*
@@ -211,9 +292,37 @@
 
 
 
+
+    <!--
+      This creates the introduction text for the about me
+    -->
+    <div class="about-intro-grid">
+      <div class="vert-about-grid">
+        <div>
+          <p class="about-title">
+            About
+          </p>
+        </div>
+        <div>
+          <p class="about-blurb">
+            I'm a Computer Engineer undergraduate from Easton, CT studying at UCONN.
+          </p>
+        </div>
+        <div>
+          <p class="about-summary">
+            Since high school, I've enjoyed building circuits and figuring out coding problems and projects! In my free time, you'll find me drawing, listening to music, playing video games, or icc skating!
+          </p>
+        </div>
+      </div>  
+      <div class="abt-imag">
+        <image class="about-image" src="about-images/about.png"></image>
+      </div>
+    </div>
+      
+
     
 
-
+    
 
 
      
