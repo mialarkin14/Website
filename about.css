@@ -1,0 +1,512 @@
+/*
+Stylesheet for the about page CSS
+*/  
+
+
+
+
+/*
+Sets whole website background to be blue with no margins 
+*/
+.body{
+background-color: #bef1f7;
+margin: 0;
+}
+
+
+
+/*
+Header/ Toolbar CSS
+*/
+/*
+Creates a header with padding
+*/
+.header{
+    background-color: #69c0e2;
+    padding: 10px;
+}
+
+/*
+Creates a toolbar using a grid that has 8 columns with certain specifications 
+*/
+.toolbar{
+    vertical-align: top;
+    background-color: #69c0e2;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+Logo specifications to align it to the left 
+*/
+.logo{
+    vertical-align: top;
+    width: 90px;
+    height: 90px;
+    margin-left: 80px;
+    margin-right: 200px;
+}
+
+/*
+Outside logo specifications to align them to the right
+*/
+.git-logo, .insta-logo{
+    width: 40px;
+    height: 40px;
+}
+
+    /*
+    Outside logo specification for Linkdin as imported image has differenet specifications than above 
+    */
+.link-logo{
+    width: 30px;
+    height: 30px;
+}
+
+/*
+Sets toolbar buttons to have certain specifications
+*/
+.home-b, .about-b, .portfolio-b, .contact-b{
+    background-color: #69c0e2;
+    border: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+
+
+/*
+About introduction CSS
+*/
+
+/*
+Uses flexbox to center
+*/
+.about-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Creates a grid for the about me 
+*/
+.about-intro-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+    column-gap: 60px;
+    padding: 70px;
+}
+
+/*
+Creates a vertical grid
+*/
+.vert-about-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 0px;
+}
+
+
+/*
+Customizes the div for the image
+*/
+.abt-imag{
+    margin-bottom: 0px;
+}
+
+/*
+Customizes image
+*/
+.about-image{
+    width: 550px;
+    height: 450px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/*
+Customizes the about title
+*/
+.about-title{
+    width: 200px;
+    font-family: Roboto;
+    font-size: 50px;
+    color: #5b5b5b;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+/*
+Customizes the about blurb
+*/
+.about-blurb{
+    width: 420px;
+    font-family: Roboto;
+    font-size: 25px;
+    color: #797979;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+/*
+Customizes about summary
+*/
+.about-summary{
+    width: 450px;
+    font-family: Roboto;
+    font-size: 23px;
+    color: #797979;
+    font-weight: 200;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+/*
+Fun Images CSS
+*/  
+/*
+Sets background to a different color
+*/ 
+.fun-images{
+    padding: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+Uses a grid
+*/
+.fun-images-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+/*
+Customizes images
+*/
+.fun-image{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+    background-color: #ddfbff;
+    border-radius: 8px;
+}
+/*
+Individually change one image
+*/
+.fun-image-me{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    padding: 10px;
+    background-color: #ddfbff;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/*
+Timeline CSS
+*/
+/*
+Timeline title
+*/
+.timeline-title{
+    position: absolute;
+    top: -180px;
+    transform: translateX(50%);
+}
+.timeline-title p{
+    font-family: Roboto;
+    font-size: 40px;
+    color: #000000;
+    font-weight: 500;
+    width: 500px;
+}
+
+/*
+Customizing the timeline's container
+*/
+.timeline-container{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 230px;
+    padding-bottom: 130px;
+    background-color: #8edfff;
+}
+
+/*
+Customize actual timeline
+*/
+.timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*
+Customizing timeline unordered list
+*/
+.timeline ul{
+    list-style: none;
+}
+
+/*
+Customizing the timeline's list items
+*/
+.timeline ul li{
+    padding: 20px;
+    background-color: #dbfbfd;
+    font-family: Roboto;
+    color: black;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/*
+Customizing the headers of the timeline
+*/
+.title{
+    font-size: 24px;
+    margin: 0px;
+    font-weight: 500;
+    color: #5b5b5b; 
+}
+
+/*
+Customize the date of the timeline
+*/
+.date{
+    font-size: 19px;
+    color: #262626;
+}
+.timeline-info .date{
+    position: absolute;
+    top: -50px;
+}
+
+/*
+Customizing the information in the timeline
+*/
+.paragraph{
+    font-size: 17px;
+    color: #5b5b5b
+}
+
+/*
+Creating timeline shape
+*/
+.timeline ul li{
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/*
+Seting even list items to the right and odd list items to the left
+*/
+.timeline ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-140px);
+    border-radius: 20px 0px 20px 20px;
+}
+.timeline ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(100px);
+    border-radius: 0px 20px 20px 20px;
+}
+
+/*
+Creating center line of timeline
+*/
+.timeline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+
+}
+
+/*
+Adds circles to the timeline
+*/
+.timeline ul li::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 0;
+}
+
+/*
+Set the odd circles to the right side
+*/
+.timeline ul li:nth-child(odd)::after{
+    transform: translate(50%, -50%);
+    right: -80px;
+}
+
+/*
+Set the even circles to the left side
+*/
+.timeline ul li:nth-child(even)::after{
+    transform: translate(-50%, -50%);
+    left: -80px;
+}
+
+/*
+Change circle color when hover
+*/
+.timeline ul li:hover:after{
+    background-color: #60b8dc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Brain Infographic CSS
+*/
+/*
+Customizes text for infographic in a flexbox to center it
+*/
+.brain-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddfbff;
+    padding: 20px;
+}
+
+/*
+Customzies text
+*/
+.actual-brain-text{
+    width: 600px;
+    font-family: Roboto;
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/*
+Customize image to fit width of screen using flex box and centers it
+*/
+.brain {
+    display: flex;
+    background-color: #ddfbff;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+/*
+Customizes image to a certain width
+*/
+.brain img{
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/*
+Footer CSS
+*/
+/*
+Creates a footer with padding
+*/
+.footer{
+    background-color: #69c0e2;
+    padding: 50px;
+}
+
+/*
+Creates a quick-access using a grid  
+*/
+.quick-access{
+    vertical-align: top;
+    background-color: #69c0e2;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}
+
+/*
+Creates quick-links grid
+*/
+.quick-links-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*
+Customizes quick-link text
+*/
+.quick-link-text{
+    color: white;
+
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+
+
+
+/*
+Changes mouse to a pointer when hovered on and underlines the text
+*/
+.home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
+.contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
+.thread-image:hover, .equalizer-image:hover, .movie-image:hover,
+.lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
+cursor: pointer;
+text-decoration: underline;
+transition: .15s;
+}
