@@ -1,447 +1,469 @@
 /*
-Stylesheet for the home page
+Stylesheet for the home page CSS
 */  
 
+
+/*
+Sets whole website background to be blue with no margins 
+*/
+.body{
+  background-color: #bef1f7;
+  margin: 0;
+}
+
+
+
+/*
+Header/ Toolbar CSS
+*/
+  /*
+  Creates a header with padding
+  */
+  .header{
+    background-color: #69c0e2;
+    padding: 10px;
+  }
+
+  /*
+  Creates a toolbar using a grid that has 8 columns with certain specifications 
+  */
+  .toolbar{
+    vertical-align: top;
+    background-color: #69c0e2;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*
+  Logo specifications to align it to the left 
+  */
+  .logo{
+    vertical-align: top;
+    width: 90px;
+    height: 90px;
+    margin-left: 80px;
+    margin-right: 200px;
+  }
+
+  /*
+  Outside logo specifications to align them to the right
+  */
+  .git-logo, .insta-logo{
+    width: 40px;
+    height: 40px;
+  }
+
+    /*
+    Outside logo specification for Linkdin as imported image has differenet specifications than above 
+    */
+  .link-logo{
+    width: 30px;
+    height: 30px;
+  }
   
   /*
-  Sets whole website background to be blue with no margins 
+  Sets toolbar buttons to have certain specifications
   */
-  .body{
-    background-color: #bef1f7;
+  .home-b, .about-b, .portfolio-b, .contact-b{
+    background-color: #69c0e2;
+    border: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+  }
+
+
+
+
+/*
+Home Image CSS
+*/
+  /*
+  Uses flexbox to move home image in accordance with screen width
+  */
+  .home-image {
+    display: flex;
+    background-color: #c8f8fc;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+
+  /*
+  Uses flexbox to move home image in accordance with screen width
+  */
+  .home-image img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+  
+
+
+/*
+Welcome-Introduction CSS
+*/
+  /*
+  Allows grid to be a flexbox and centers
+  */
+  .intro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /*
+  Makes a grid with two columns of unequal distribution 1:3. Applies a margin left and right 
+  */
+  .intro-text{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  /*
+  Restricts message to be 200px in width and applies specifications to text 
+  Margin to the right and top
+  */
+  .welcome{
+    width: 200px;
+    font-family: Roboto;
+    font-size: 60px;
+    color: #797979;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-left: 10%
+  }
+  
+  /*
+  Restricts message to be 400px in width and applies specifications to text 
+  Margin to the right and left
+  */
+  .welcome-blurb{
+    width: 500px;
+    font-family: Roboto;
+    font-size: 22px;
+    color: #626262;
+    margin-top: 120px;
+    margin-left: 30%;
+  }
+
+  /*
+  Restricts and adds specifcations to the learn more
+  */
+  .learn-more{
+    width: 300px;
+    font-family: Roboto;
+    font-size: 22px;
+    margin-left: 30%;
+    color: #626262;
+  }
+
+  /*
+  Restricts message to be 200px in width and applies specifications to text 
+  Margin to the right
+  */
+  .motto{ 
+    width: 280px;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #797979;
+    margin-right: 100px;
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+
+  /*
+  Aligns the sky image
+  */
+  .calm{
+    margin-left: 30%;
+    margin-top: 40px;
+  }
+  
+  /*
+  Changes the sky image
+  */
+  .calm img{
+    width: 550px;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom; 
+  }
+
+
+
+
+/*
+Featured Work CSS
+*/
+  /*
+  Sets whole background of featured work to a different color
+  */
+  .fw-container{
+    background-color: #7acff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*
+  Gives the grid a left, right, and top margin and creates 3 equal columns 
+  */
+  .featured-work{
+    background-color: #7acff1;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*
+  Specifies font, size, and max message width for the featured work text
+  */
+  .featured-work-text{
+    font-family: Roboto;
+    font-size: 25px;
+    color: white;
+    width: 200px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+  }
+
+  /*
+  Allows each div in the grid to be a flexbox so elements within can be centered
+  */
+  .featured-text, .equalizer, .movie, .thread, .equal-text, .movie-text, .thread-text,
+  .learn-more-button, .explore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*
+  Sets each image in the featured work to be a certain size, covering each rectangle specified 
+  */
+  .thread-image, .equalizer-image, .movie-image{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ddfbff;
+    border-radius: 8px;
+  }
+
+  /*
+  Specifies text for each featured work
+  */
+  .thread-actual-text, .equal-actual-text, .movie-actual-text{
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /*
+  Customizes the learn more buttons
+  */
+  .lmb{
+    background-color: #4395b5;
+    border: none;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+  }
+
+  /*
+  Corrects spacing on the learn more buttons 
+  */
+  .learn-more-button, .explore-b{
+    margin-top: 50px ; 
+    margin-bottom: 50px;
+  }
+
+  /*
+  Customizes explore more button
+  */
+  .explore-b{
+    background-color: #000000;
+    border: none;
+    border-radius: 7px;
+    font-family: Roboto;
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+  }
+
+
+
+
+
+  
+/*
+Contact-Experience CSS
+*/
+  .contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 
+  Creates a grid for the contact section
+  */
+  .contact{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    column-gap: 100px;
+  }
+
+  /*
+  Creates a grid for experince section
+  */
+  .experience-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  /*
+  Customizes the text for the experience section
+  */
+  .experience-text{
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 700;
+    color: black;
+  }
+
+  /*
+  Customize each experince bullet
+  */
+  .experiences{
+    font-family: Roboto;
+    font-size: 22px;
+  }
+
+  /*
+  Customizes emoji
+  */
+  .hammer-wrench{
+    font-size: 120px;
     margin: 0;
   }
   
-
-
   /*
-  Header/ Toolbar CSS
+  Customizes the text for the email blurb
   */
-    /*
-    Creates a header with padding
-    */
-    .header{
-      background-color: #69c0e2;
-      padding: 10px;
-    }
-
-    /*
-    Creates a toolbar using a grid that has 8 columns with certain specifications 
-    */
-    .toolbar{
-      vertical-align: top;
-      background-color: #69c0e2;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
-      column-gap: 10px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /*
-    Logo specifications to align it to the left 
-    */
-    .logo{
-      vertical-align: top;
-      width: 90px;
-      height: 90px;
-      margin-left: 80px;
-      margin-right: 200px;
-    }
-
-    /*
-    Outside logo specifications to align them to the right
-    */
-    .git-logo, .insta-logo{
-      width: 40px;
-      height: 40px;
-    }
-
-      /*
-      Outside logo specification for Linkdin as imported image has differenet specifications than above 
-      */
-    .link-logo{
-      width: 30px;
-      height: 30px;
-    }
-    
-    /*
-    Sets toolbar buttons to have certain specifications
-    */
-    .home-b, .about-b, .portfolio-b, .contact-b{
-      background-color: #69c0e2;
-      border: none;
-      color: white;
-      font-family: Roboto;
-      font-size: 18px;
-    }
-
- 
-
-
-  /*
-  Home Image CSS
-  */
-    /*
-    Uses flexbox to move home image in accordance with screen width
-    */
-    .home-image {
-      display: flex;
-      background-color: #c8f8fc;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden
-    }
-
-    /*
-    Uses flexbox to move home image in accordance with screen width
-    */
-    .home-image img {
-      flex-shrink: 0;
-      min-width: 100%;
-      min-height: 100%
-    }
-    
-
-
-  /*
-  Welcome-Introduction CSS
-  */
-    /*
-    Makes a grid with two columns of unequal distribution 1:3. Applies a margin left and right 
-    */
-    .intro-text{
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      margin-top: 80px;
-      margin-bottom: 150px;
-      margin-left: 150px;
-      margin-right: 150px;
-    }
-
-    /*
-    Restricts message to be 200px in width and applies specifications to text 
-    Margin to the right and top
-    */
-    .welcome{
-      width: 200px;
-      font-family: Roboto;
-      font-size: 60px;
-      color: #797979;
-      font-weight: bold;
-      margin-right: 100px;
-      margin-top: 100px;
-      margin-left: 10%
-    }
-    
-    /*
-    Restricts message to be 400px in width and applies specifications to text 
-    Margin to the right and left
-    */
-    .welcome-blurb{
-      width: 500px;
-      font-family: Roboto;
-      font-size: 22px;
-      color: #626262;
-      margin-top: 120px;
-      margin-left: 30%;
-    }
-
-    /*
-    Restricts and adds specifcations to the learn more
-    */
-    .learn-more{
-      width: 300px;
-      font-family: Roboto;
-      font-size: 22px;
-      margin-left: 30%;
-      color: #626262;
-    }
-
-    /*
-    Restricts message to be 200px in width and applies specifications to text 
-    Margin to the right
-    */
-    .motto{ 
-      width: 280px;
-      font-family: Roboto;
-      font-size: 24px;
-      color: #797979;
-      margin-right: 100px;
-      margin-left: 10%;
-      margin-top: 30px;
-    }
-
-    /*
-    Aligns the sky image
-    */
-    .calm{
-      margin-left: 30%;
-      margin-top: 40px;
-    }
-    
-    /*
-    Changes the sky image
-    */
-    .calm-image{
-      width: 550px;
-      height: 250px;
-      object-fit: cover;
-      object-position: bottom; 
-    }
-
-  
-  
-  
-  /*
-  Featured Work CSS
-  */
-    /*
-    Sets whole background of featured work to a different color
-    */
-    .fw-container{
-      background-color: #7acff1;
-    }
-    
-    /*
-    Gives the grid a left, right, and top margin and creates 3 equal columns 
-    */
-    .featured-work{
-      background-color: #7acff1;
-      margin-left: 150px;
-      margin-right: 150px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      padding: 80px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /*
-    Specifies font, size, and max message width for the featured work text
-    */
-    .featured-work-text{
-      font-family: Roboto;
-      font-size: 25px;
-      color: white;
-      width: 200px;
-      margin-bottom: 50px;
-      margin-left: 10%;
-    }
-
-    /*
-    Allows each div in the grid to be a flexbox so elements within can be centered
-    */
-    .featured-text, .equalizer, .movie, .thread, .equal-text, .movie-text, .thread-text,
-    .learn-more-button, .explore{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    /*
-    Sets each image in the featured work to be a certain size, covering each rectangle specified 
-    */
-    .thread-image, .equalizer-image, .movie-image{
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-
-    /*
-    Specifies text for each featured work
-    */
-    .thread-actual-text, .equal-actual-text, .movie-actual-text{
-      font-family: Roboto;
-      font-size: 20px;
-      color: white;
-      width: 300px;
-      margin-bottom: 20px;
-    }
-
-    /*
-    Customizes the learn more buttons
-    */
-    .lmb{
-      background-color: #4395b5;
-      border: none;
-      border-radius: 5px;
-      font-family: Roboto;
-      font-size: 22px;
-      color: white;
-      padding: 10px;
-      width: 200px;
-    }
-
-    /*
-    Corrects spacing on the learn more buttons 
-    */
-    .learn-more-button, .explore-b{
-      margin-top: 50px ; 
-      margin-bottom: 50px;
-    }
-
-    /*
-    Customizes explore more button
-    */
-    .explore-b{
-      background-color: #000000;
-      border: none;
-      border-radius: 7px;
-      font-family: Roboto;
-      font-size: 24px;
-      color: white;
-      padding: 30px;
-    }
-
-  
-  
-  
-  
-    
-  /*
-  Contact-Experience CSS
-  */
-    /* 
-    Creates a grid for the contact section
-    */
-    .contact{
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-      padding: 40px;
-      margin-left: 150px;
-      margin-right: 150px;
-      column-gap: 100px;
-    }
-
-    /*
-    Creates a grid for experince section
-    */
-    .experience-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      column-gap: 20px;
-    }
-
-    /*
-    Customizes the text for the experience section
-    */
-    .experience-text{
-      font-family: Roboto;
-      font-size: 38px;
-      font-weight: 700;
-      color: black;
-    }
-
-    /*
-    Customize each experince bullet
-    */
-    .experiences{
-      font-family: Roboto;
-      font-size: 22px;
-    }
-
-    /*
-    Customizes emoji
-    */
-    .hammer-wrench{
-      font-size: 120px;
-      margin: 0;
-    }
-    
-    /*
-    Customizes the text for the email blurb
-    */
-    .email-blurb{
-      font-family: Roboto;
-      font-size: 30px;
-      font-weight: 500;
-      color: #626262;
-    }
-
-    /*
-    Customizes the text for the email
-    */
-    .actual-email{
-      font-family: Roboto;
-      font-size: 24px;
-      color: #626262;
-      margin-top: 50px;
-    }
-
-    /*
-    Customizes other experinces button
-    */
-    .other-experinces{
-      margin-top: 50px;
-      margin-bottom: 80px;
-    }
-
-    /*
-    Customizes actual experinces button
-    */
-    .experinces-button{
-      color: white;
-      background-color: black;
-      font-family: Roboto;
-      font-size: 22px;
-      border: none;
-      border-radius: 8px;
-      padding: 40px;
-      
-    }
-
-
-
-  /*
-  Footer CSS
-  */
-    /*
-    Creates a footer with padding
-    */
-    .footer{
-      background-color: #69c0e2;
-      padding: 50px;
-    }
-
-    /*
-    Creates a quick-access using a grid  
-    */
-    .quick-access{
-      vertical-align: top;
-      background-color: #69c0e2;
-      display: grid;
-      grid-template-columns: 1fr 3fr; 
-    }
-
-    /*
-    Creates quick-links grid
-    */
-    .quick-links-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /*
-    Customizes quick-link text
-    */
-    .quick-link-text{
-      color: white;
-      font-family: Roboto;
-      font-size: 18px;
-    }
-
-
-
-
-  /*
-  Changes mouse to a pointer when hovered on and underlines the text
-  */
-  .home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
-  .contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
-  .thread-image:hover, .equalizer-image:hover, .movie-image:hover,
-  .lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    transition: .15s;
+  .email-blurb{
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    color: #626262;
   }
+
+  /*
+  Customizes the text for the email
+  */
+  .actual-email{
+    font-family: Roboto;
+    font-size: 24px;
+    color: #626262;
+    margin-top: 50px;
+  }
+
+  /*
+  Customizes other experinces button
+  */
+  .other-experinces{
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  /*
+  Customizes actual experinces button
+  */
+  .experinces-button{
+    color: white;
+    background-color: black;
+    font-family: Roboto;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    padding: 40px;
+    
+  }
+
+
+
+/*
+Footer CSS
+*/
+  /*
+  Creates a footer with padding
+  */
+  .footer{
+    background-color: #69c0e2;
+    padding: 50px;
+  }
+
+  /*
+  Creates a quick-access using a grid  
+  */
+  .quick-access{
+    vertical-align: top;
+    background-color: #69c0e2;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+  }
+
+  /*
+  Creates quick-links grid
+  */
+  .quick-links-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*
+  Customizes quick-link text
+  */
+  .quick-link-text{
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+  }
+
+
+
+
+/*
+Changes mouse to a pointer when hovered on and underlines the text
+*/
+.home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
+.contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
+.thread-image:hover, .equalizer-image:hover, .movie-image:hover,
+.lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  transition: .15s;
+}
