@@ -140,7 +140,7 @@ Welcome-Introduction CSS
     font-weight: bold;
     margin-right: 100px;
     margin-top: 100px;
-    margin-left: 10%
+    margin-left: 10%;
   }
   
   /*
@@ -184,7 +184,7 @@ Welcome-Introduction CSS
   /*
   Aligns the sky image
   */
-  .calm{
+  .gud{
     margin-left: 30%;
     margin-top: 40px;
   }
@@ -192,11 +192,8 @@ Welcome-Introduction CSS
   /*
   Changes the sky image
   */
-  .calm img{
-    width: 550px;
-    height: 250px;
-    object-fit: cover;
-    object-position: bottom; 
+  .gud img{
+    width: 350px;
   }
 
 
@@ -366,9 +363,9 @@ Contact-Experience CSS
   /*
   Customizes emoji
   */
-  .hammer-wrench{
-    font-size: 120px;
-    margin: 0;
+  .gudetama-tie{
+    width: 300px;
+
   }
   
   /*
