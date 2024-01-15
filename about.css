@@ -1,5 +1,5 @@
 /*
-Stylesheet for the about page CSS
+Stylesheet for the about page
 */  
 
 
@@ -264,7 +264,7 @@ Customize actual timeline
 .timeline{
     width: 80%;
     height: auto;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
 }
@@ -295,7 +295,7 @@ Customizing the headers of the timeline
     font-size: 24px;
     margin: 0px;
     font-weight: 500;
-    color: #5b5b5b; 
+    color: #5b5b5b;
 }
 
 /*
@@ -315,7 +315,7 @@ Customizing the information in the timeline
 */
 .paragraph{
     font-size: 17px;
-    color: #5b5b5b
+    color: #5b5b5b;
 }
 
 /*
@@ -393,6 +393,19 @@ Change circle color when hover
     background-color: #60b8dc;
 }
 
+/*
+Customizing images in the timeline
+*/
+.beginning-container img{
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.beginning-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
 
 
 
