@@ -15,6 +15,10 @@ margin: 0;
 
 
 
+
+
+
+
 /*
 Header/ Toolbar CSS
 */
@@ -76,6 +80,18 @@ Sets toolbar buttons to have certain specifications
     font-family: Roboto;
     font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -173,6 +189,12 @@ Customizes about summary
 
 
 
+
+
+
+
+
+
 /*
 Fun Images CSS
 */  
@@ -220,6 +242,16 @@ Individually change one image
     background-color: #ddfbff;
     border-radius: 8px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -402,6 +434,9 @@ Customizing images in the timeline
     width: 100px;
     margin-left: 15px;
     margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .beginning-grid{
     display: grid;
@@ -412,11 +447,17 @@ Customizing images in the timeline
     width: 220px;
     margin-left: 15px;
     margin-top: 50px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .working-container img{
     width: 120px;
     margin-top: 20px;
     margin-left: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .working-grid{
     display: grid;
@@ -432,6 +473,9 @@ Customizing images in the timeline
     width: 110px;
     margin-top: 5px;
     margin-left: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .graduation-grid{
     display: grid;
@@ -442,6 +486,9 @@ Customizing images in the timeline
     width: 140px;
     margin-top: 25px;
     margin-left: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .freshman-grid{
     display: grid;
@@ -452,12 +499,22 @@ Customizing images in the timeline
     width: 140px;
     margin-top: 80px;
     margin-left: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .sophomore-grid{
     display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 20px;
 }
+
+
+
+
+
+
+
 
 
 /*
@@ -486,6 +543,10 @@ Random Facts CSS
     color: #5b5b5b;
     margin-bottom: 10px;
 }
+
+
+
+
 
 
 
@@ -540,6 +601,94 @@ Customizes image to a certain width
     width: 1000px;
     margin-bottom: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+/*
+Concrete Canoe CSS
+*/
+/*
+Adds padding to the div
+*/
+.concrete-canoe-container{
+    padding: 80px;
+}
+
+/*
+Creates a grid for the two sections
+*/
+.concrete-canoe-grid{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 80px;
+}
+
+/*
+Sets canoe image to be in center of container usign flexbox
+*/
+.canoe-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Customizes the canoe image
+*/
+.canoe{
+    height: 400px;
+    width: 650px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/*
+Customizes the title text 
+*/
+.passionate{
+    font-family: Roboto;
+    font-size: 50px;
+    color: #5b5b5b;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20%;
+}
+
+/*
+Customizes the blurb text
+*/
+.concrete-canoe-blurb{
+    font-family: Roboto;
+    font-size: 24px;
+    color: #5b5b5b;
+    margin-left: 20%;
+}
+/*
+Customizes learn more button
+*/
+.concrete-learn-more{
+    width: 300px;
+    font-family: Roboto;
+    font-size: 22px;
+    color: #626262;
+    margin-left: 20%;
+}
+.concrete-learn-more:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .15s;
+}
+
+
+
+
 
 
 
