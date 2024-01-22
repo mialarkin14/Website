@@ -233,9 +233,10 @@ Timeline CSS
 Timeline title
 */
 .timeline-title{
-    position: absolute;
     top: -180px;
-    transform: translateX(50%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .timeline-title p{
     font-family: Roboto;
@@ -243,6 +244,7 @@ Timeline title
     color: #000000;
     font-weight: 500;
     width: 500px;
+    text-align: center;
 }
 
 /*
@@ -406,10 +408,84 @@ Customizing images in the timeline
     grid-template-columns: 2fr 1fr;
     column-gap: 20px;
 }
+.arduino-container img{
+    width: 220px;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+.working-container img{
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.working-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+.STEM-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+.graduation-container img{
+    width: 110px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.graduation-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+.freshman-container img{
+    width: 140px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.freshman-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+.sophomore-container img{
+    width: 140px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+.sophomore-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+}
 
 
-
-
+/*
+Random Facts CSS
+*/
+.random-facts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px;
+    column-gap: 10px;
+}
+.gudetama-about img{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.rand-title{
+    font-family: Roboto;
+    font-size: 50px;
+    color: #5b5b5b;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.random-facts-text{
+    font-family: Roboto;
+    font-size: 22px;
+    color: #5b5b5b;
+    margin-bottom: 10px;
+}
 
 
 
