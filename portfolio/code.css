@@ -1,7 +1,10 @@
-
 /*
-Stylesheet for the portfolio page CSS
+Stylesheet for the code portfolio page CSS
 */
+
+
+
+
 
 
 /*
@@ -80,90 +83,36 @@ Stylesheet for the portfolio page CSS
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*
-  Portfolio Grid CSS
+Code section CSS
 */
+    /*
+    Customizes the intro of the code page
+    */
+    .code-intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-/*
-Adds padding to the container
-*/
-.portfolio-container{
-  padding: 120px;
-}
-
-/*
-Customizes the portfolio title
-*/
-.portfolio-title p{
-  font-family: Roboto;
-  font-size: 60px;
-  color: #797979;
-  font-weight: bold;
-}
-
-/*
-Customizes the Gudetama Image
-*/
-.gudetama-point-port img{
-  width: 400px;
-}
+    /*
+    Centers objects using a flexbox
+    */
+    .code-title, .gudetama-code{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
-/*
-Creates the grid with 2 columns
-*/
-.portfolio-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-}
-
-/*
-Sets the folder images, gudetama, and text to be centered using a flexbox
-*/
-.folder-image, .portfolio-title, .folder-titles, .gudetama-point-port{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*
-Customizes the folder images
-*/
-.folder-image img{
-  width: 400px;
-}
-
-/*
-Customizes the folder text
-*/
-.folder-titles{
-  font-family: Roboto;
-  font-size: 30px;
-  color: #797979;
-  font-weight: 500;
-}
-
-.folder-titles:hover{
-  cursor: pointer;
-  text-decoration: underline;
-  transition: .15s;
-}
-
-
-
-
-
+    /*
+    Customizes the title
+    */
+    .code-title p{
+        font-family: Roboto;
+        font-size: 60px;
+        color: #797979;
+        font-weight: bold;
+    }
 
 
 
