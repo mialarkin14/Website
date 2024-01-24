@@ -124,11 +124,10 @@ Creates the grid with 2 columns
 /*
 Sets the folder images and text to be centered using a flexbox
 */
-.folder-image, .portfolio-title{
+.folder-image, .portfolio-title, .folder-titles{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 /*
@@ -136,6 +135,21 @@ Customizes the folder images
 */
 .folder-image img{
   width: 400px;
+}
+
+/*
+Customizes the folder text
+*/
+.folder-titles{
+  font-family: Roboto;
+  font-size: 30px;
+  color: #797979;
+}
+
+.folder-titles:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  transition: .15s;
 }
 
 
