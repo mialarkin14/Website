@@ -1,6 +1,13 @@
 /*
-Stylesheet for the code portfolio page CSS
+    Stylesheet for the electronics portfolio page CSS
 */
+
+
+
+
+
+
+
 
 
 
@@ -82,90 +89,115 @@ Stylesheet for the code portfolio page CSS
  
 
 
-
 /*
-Code section CSS
+Electronics section CSS
 */
     /*
     Customizes the intro of the code page
     */
-    .code-intro{
+    .electronics-intro{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-top: 80px;
     }
 
     /*
     Centers objects using a flexbox
     */
-    .code-title, .gudetama-code, .project{
+    .electronics-title, .gudetama-electronics{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-content: center;
     }
-
 
     /*
     Customizes the title
     */
-    .code-title p{
+    .electronics-title p{
         font-family: Roboto;
         font-size: 60px;
         color: #797979;
         font-weight: bold;
     }
 
+
     /*
-    Makes the code a 3 column grid
+    Customizes the gudetama
     */
-    .projects-grid-code{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding-left: 80px;
-      padding-right: 80px;
-      padding-top: 40px;
-      padding-bottom: 80px;
-      column-gap: 40px;
+    .gudetama-electronics img{
+        width: 200px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+
+
+
+
+
+
+
+    /*
+    Sets up the audio equalizer project using a grid
+    */
+    .audio-equalizer{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 100px;
+        column-gap: 20%;
+        background-color: #ddfbff;
     }
 
     /*
-    Customize each project's image
+    Customizes text
     */
-    .project img{
-      width: 300px;
-      height: 300px;
-      padding: 10px;
-      border-radius: 20px;
-      background-color: #ddfbff;
-      object-fit: cover;
-      margin-bottom: 10px;
+    .information p1{
+        font-family: Roboto;
+        font-size: 40px;
+        color: #797979;
+        font-weight: 500;
+    }
+    .information p{
+        font-family: Roboto;
+        font-size: 20px;
+        color: #797979;
+    }
+    .audio-equalizer-pic p{
+        font-family: Roboto;
+        font-size: 20px;
+        color: #797979;
+        width: 500px;
     }
 
     /*
-    Customizes the text below each project
+    Customizes images
     */
-    .project p1{
-      font-family: Roboto;
-      font-size: 25px;
-      color: #797979;
-      font-weight: 500;
+    .audio-equalizer-pic img{
+        width: 500px;
+        object-fit: contain;
     }
-    
-    .project p{
-      font-family: Roboto;
-      font-size: 20px;
-      color: #797979;
-      margin-bottom: 80px;
+    .information img{
+        height: 450px;
     }
 
     /*
-    Customizes the links to github
+    Customizes the download button
     */
-    .project p1:hover, .project img:hover{
-      cursor: pointer;
-      text-decoration: underline;
-      transition: .15s;
+    .download{
+        background-color: #489bbc;
+        width: 500px;
+        font-family: Roboto;
+        font-size: 22px;
+        border: none;
+        border-radius: 8px;
+        padding: 40px;
+        margin-top: 40px;
     }
-
+    .download:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        transition: .15s;
+    }
 
 
 
@@ -226,3 +258,5 @@ Code section CSS
     text-decoration: underline;
     transition: .15s;
   }
+
+
