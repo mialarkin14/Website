@@ -156,35 +156,29 @@ Gallery section CSS
     /*
     Customizes each image
     */
-    .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img{
-      width: 400px;
+    .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img, .piano img{
+      width: 300px;
     }
     .iu img{
-      width: 350px;
+      width: 250px;
     }
     .dragon img, .bubble img{
-      width: 300px;
+      width: 250px;
     }
     .me img{      
-      height: 480px;     
+      height: 380px;     
     }
-    .piano img{
-      width: 500px;     
-    }
-    .piglet img{
-      width: 350px;
-    }
-    .portrait img{
-      width: 350px;     
+    .piglet img, .portrait img{
+      width: 250px;
     }
     .house-of-dragon img{
-      height: 450px;
+      height: 350px;
     }
     .mountain-lion img{
-      height: 400px;      
+      height: 300px;      
     }
     .tear img{
-      width: 300px;
+      width: 200px;
     }
   
 

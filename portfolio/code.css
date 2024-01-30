@@ -1,6 +1,8 @@
 /*
-Stylesheet for the drawing portfolio page CSS
+Stylesheet for the code portfolio page CSS
 */
+
+
 
 
 
@@ -81,23 +83,21 @@ Stylesheet for the drawing portfolio page CSS
 
 
 
-
 /*
-Drawing section CSS
+Code section CSS
 */
     /*
-    Customizes the intro of the drawing page
+    Customizes the intro of the code page
     */
-    .drawing-grid{
+    .code-intro{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-top: 80px;
     }
 
     /*
     Centers objects using a flexbox
     */
-    .drawing-title, .gudetama-draw{
+    .code-title, .gudetama-code, .project{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -107,7 +107,7 @@ Drawing section CSS
     /*
     Customizes the title
     */
-    .drawing-title p{
+    .code-title p{
         font-family: Roboto;
         font-size: 60px;
         color: #797979;
@@ -115,74 +115,56 @@ Drawing section CSS
     }
 
     /*
-    Customizes the gudetama
+    Makes the code a 3 column grid
     */
-    .gudetama-draw img{
-        width: 250px;
-    }
-
-
-
-
-
-
-
-/*
-Gallery section CSS
-*/
-    /*
-    Sets gallery to be a 3 column grid
-    */
-    .gallery{
+    .projects-grid-code{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      padding: 20px;
-      row-gap: 40px;
-      column-gap: 30px;
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 40px;
+      padding-bottom: 80px;
+      column-gap: 40px;
     }
 
-    
     /*
-    Center the images in their div using a flexbox
+    Customize each project's image
     */
-    .beth, .hi, .toad, .sky, .pip-kace, .iu, .tear, .music-box, .dragon, .bubble,
-    .me, .piano, .piglet, .portrait, .house-of-dragon, .mountain-lion{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    
-    /*
-    Customizes each image
-    */
-    .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img, .piano img{
+    .project img{
       width: 300px;
+      height: 300px;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #ddfbff;
+      object-fit: cover;
+      margin-bottom: 10px;
     }
-    .iu img{
-      width: 250px;
-    }
-    .dragon img, .bubble img{
-      width: 250px;
-    }
-    .me img{      
-      height: 380px;     
-    }
-    .piglet img, .portrait img{
-      width: 250px;
-    }
-    .house-of-dragon img{
-      height: 350px;
-    }
-    .mountain-lion img{
-      height: 300px;      
-    }
-    .tear img{
-      width: 200px;
-    }
-  
 
+    /*
+    Customizes the text below each project
+    */
+    .project p1{
+      font-family: Roboto;
+      font-size: 25px;
+      color: #797979;
+      font-weight: 500;
+    }
+    
+    .project p{
+      font-family: Roboto;
+      font-size: 20px;
+      color: #797979;
+      margin-bottom: 80px;
+    }
 
+    /*
+    Customizes the links to github
+    */
+    .project p1:hover, .project img:hover{
+      cursor: pointer;
+      text-decoration: underline;
+      transition: .15s;
+    }
 
 
 
@@ -244,5 +226,3 @@ Gallery section CSS
     text-decoration: underline;
     transition: .15s;
   }
-
-
