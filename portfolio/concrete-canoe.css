@@ -1,0 +1,367 @@
+/*
+Stylesheet for the concrete-canoe portfolio page CSS
+*/
+
+
+
+
+/*
+  Sets whole website background to be blue with no margins 
+  */
+  .body{
+    background-color: #bef1f7;
+    margin: 0;
+  }
+  
+
+
+  /*
+  Header/ Toolbar CSS
+  */
+    /*
+    Creates a header with padding
+    */
+    .header{
+      background-color: #69c0e2;
+      padding: 10px;
+    }
+
+    /*
+    Creates a toolbar using a grid that has 8 columns with certain specifications 
+    */
+    .toolbar{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*
+    Logo specifications to align it to the left 
+    */
+    .logo{
+      vertical-align: top;
+      width: 90px;
+      height: 90px;
+      margin-left: 80px;
+      margin-right: 200px;
+    }
+
+    /*
+    Outside logo specifications to align them to the right
+    */
+    .git-logo, .insta-logo{
+      width: 40px;
+      height: 40px;
+    }
+
+      /*
+      Outside logo specification for Linkdin as imported image has differenet specifications than above 
+      */
+    .link-logo{
+      width: 30px;
+      height: 30px;
+    }
+    
+    /*
+    Sets toolbar buttons to have certain specifications
+    */
+    .home-b, .about-b, .portfolio-b, .contact-b{
+      background-color: #69c0e2;
+      border: none;
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Customizes the intro of the concrete canoe page
+*/
+    .concrete-canoe-intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 80px;
+    }
+
+    /*
+    Centers objects using a flexbox
+    */
+    .intro-text, .scarf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*
+    Customizes the title
+    */
+    .intro-text p{
+        font-family: Roboto;
+        font-size: 60px;
+        color: #797979;
+        font-weight: bold;
+    }
+
+    /*
+    Customizes the gudetama
+    */
+    .scarf img{
+        width: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+CSS for what is section 
+*/
+    /*
+    Set up a grid
+    */
+    .what-is{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 80px;
+        column-gap: 80px;
+    }
+    
+    /*
+    Customizes the intro blurb
+    */
+    .blurb p{
+        font-family: Roboto;
+        font-size: 30px;
+        color: #797979;
+        margin-left: 15%;
+    }
+
+    /*
+    Customizes inforgrahic section
+    */
+    .infographic img{
+        width: 800px;
+    }
+    .infographic p{
+        font-family: Roboto;
+        font-size: 22px;
+        color: #797979;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+CSS for my involvement section
+*/
+    /*
+    Sets background color
+    */
+    .my-involvement{
+        background-color: #ddfbff;
+    }
+
+    /*
+    Set up as a grid with three columns
+    */
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 150px;
+        column-gap: 30px;
+        row-gap: 50px;
+
+    }
+
+    /*
+    Customizes each image
+    */
+    .demolding img, .newsletter img, .mixing img, .sticker img, .mold img, .shell img, .cover img{
+        width: 400px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 15px;
+    }
+
+    /*
+    Sets each image to the center
+    */
+    .demolding, .newsletter, .mixing, .sticker, .mold, .shell, .cover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    Customizes text
+    */
+    .my-involvement-text p{
+        font-family: Roboto;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .my-involvement-text p1{
+        font-family: Roboto;
+        font-size: 30px;
+    }
+    .my-involvement-text p2{
+        font-family: Roboto;
+        font-size: 22px;
+    }
+
+
+
+
+
+
+
+
+
+/*
+CSS Future Section
+*/
+    /*
+    Give the section padding
+    */
+    .future{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 150px;
+    }
+
+    /*
+    Customize text
+    */
+    .future p{
+        font-family: Roboto;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .future p1{
+        font-family: Roboto;
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+
+/*
+CSS Closing Section
+*/
+    /*
+    Sets the last image to be in a flexbox
+    */
+    .closing-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    /*
+    Customizes actual image
+    */
+    .closing-image img{
+        width: 1300px;
+    }
+
+
+
+
+
+ /*
+  Footer CSS
+  */
+    /*
+    Creates a footer with padding
+    */
+    .footer{
+      background-color: #69c0e2;
+      padding: 50px;
+    }
+
+    /*
+    Creates a quick-access using a grid  
+    */
+    .quick-access{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 1fr 3fr; 
+    }
+
+    /*
+    Creates quick-links grid
+    */
+    .quick-links-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*
+    Customizes quick-link text
+    */
+    .quick-link-text{
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+
+
+
+  /*
+  Changes mouse to a pointer when hovered on and underlines the text
+  */
+  .home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
+  .contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
+  .thread-image:hover, .equalizer-image:hover, .movie-image:hover,
+  .lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .15s;
+  }

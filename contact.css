@@ -1,0 +1,233 @@
+/*
+  Sets whole website background to be blue with no margins 
+  */
+  .body{
+    background-color: #bef1f7;
+    margin: 0;
+  }
+  
+
+
+  /*
+  Header/ Toolbar CSS
+  */
+    /*
+    Creates a header with padding
+    */
+    .header{
+      background-color: #69c0e2;
+      padding: 10px;
+    }
+
+    /*
+    Creates a toolbar using a grid that has 8 columns with certain specifications 
+    */
+    .toolbar{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*
+    Logo specifications to align it to the left 
+    */
+    .logo{
+      vertical-align: top;
+      width: 90px;
+      height: 90px;
+      margin-left: 80px;
+      margin-right: 200px;
+    }
+
+    /*
+    Outside logo specifications to align them to the right
+    */
+    .git-logo, .insta-logo{
+      width: 40px;
+      height: 40px;
+    }
+
+      /*
+      Outside logo specification for Linkdin as imported image has differenet specifications than above 
+      */
+    .link-logo{
+      width: 30px;
+      height: 30px;
+    }
+    
+    /*
+    Sets toolbar buttons to have certain specifications
+    */
+    .home-b, .about-b, .portfolio-b, .contact-b{
+      background-color: #69c0e2;
+      border: none;
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+ 
+
+
+
+
+/*
+Customizes the intro of the concrete canoe page
+*/
+    .contact-intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 80px;
+    }
+
+    /*
+    Centers objects using a flexbox
+    */
+    .intro-text, .gud-contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*
+    Customizes the title
+    */
+    .intro-text p{
+        font-family: Roboto;
+        font-size: 60px;
+        color: #797979;
+        font-weight: bold;
+    }
+
+    /*
+    Customizes the gudetama
+    */
+    .gud-contact img{
+        width: 180px;
+    }
+
+
+
+
+
+
+/*
+CSS for actual contact information
+*/
+    /*
+    Creates a grid
+    */
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 120px;
+        column-gap: 80px;
+    }
+
+    /*
+    Align the text
+    */
+    .contact-text{
+        margin-top: 10%;
+    }
+    
+    /*
+    Customizes text
+    */
+    .contact-text p1{
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .contact-text p{
+        font-family: Roboto;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .contact-text p2{
+        font-family: Roboto;
+        font-size: 20px;
+    }
+
+    /*
+    Customizes image
+    */
+    .contact-img img{
+        padding: 10px;
+        background-color: #ddfbff;
+        border-radius: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*
+  Footer CSS
+  */
+    /*
+    Creates a footer with padding
+    */
+    .footer{
+      background-color: #69c0e2;
+      padding: 50px;
+    }
+
+    /*
+    Creates a quick-access using a grid  
+    */
+    .quick-access{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 1fr 3fr; 
+    }
+
+    /*
+    Creates quick-links grid
+    */
+    .quick-links-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*
+    Customizes quick-link text
+    */
+    .quick-link-text{
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+
+
+
+  /*
+  Changes mouse to a pointer when hovered on and underlines the text
+  */
+  .home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
+  .contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
+  .thread-image:hover, .equalizer-image:hover, .movie-image:hover,
+  .lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .15s;
+  }

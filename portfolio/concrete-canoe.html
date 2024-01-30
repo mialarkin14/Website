@@ -1,153 +1,11 @@
 <!DOCTYPE html>
-
-
-
-
-<style>
-
-/*
-  Sets whole website background to be blue with no margins 
-  */
-  .body{
-    background-color: #bef1f7;
-    margin: 0;
-  }
-  
-
-
-  /*
-  Header/ Toolbar CSS
-  */
-    /*
-    Creates a header with padding
-    */
-    .header{
-      background-color: #69c0e2;
-      padding: 10px;
-    }
-
-    /*
-    Creates a toolbar using a grid that has 8 columns with certain specifications 
-    */
-    .toolbar{
-      vertical-align: top;
-      background-color: #69c0e2;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
-      column-gap: 10px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /*
-    Logo specifications to align it to the left 
-    */
-    .logo{
-      vertical-align: top;
-      width: 90px;
-      height: 90px;
-      margin-left: 80px;
-      margin-right: 200px;
-    }
-
-    /*
-    Outside logo specifications to align them to the right
-    */
-    .git-logo, .insta-logo{
-      width: 40px;
-      height: 40px;
-    }
-
-      /*
-      Outside logo specification for Linkdin as imported image has differenet specifications than above 
-      */
-    .link-logo{
-      width: 30px;
-      height: 30px;
-    }
-    
-    /*
-    Sets toolbar buttons to have certain specifications
-    */
-    .home-b, .about-b, .portfolio-b, .contact-b{
-      background-color: #69c0e2;
-      border: none;
-      color: white;
-      font-family: Roboto;
-      font-size: 18px;
-    }
-
- 
-
- /*
-  Footer CSS
-  */
-    /*
-    Creates a footer with padding
-    */
-    .footer{
-      background-color: #69c0e2;
-      padding: 50px;
-    }
-
-    /*
-    Creates a quick-access using a grid  
-    */
-    .quick-access{
-      vertical-align: top;
-      background-color: #69c0e2;
-      display: grid;
-      grid-template-columns: 1fr 3fr; 
-    }
-
-    /*
-    Creates quick-links grid
-    */
-    .quick-links-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /*
-    Customizes quick-link text
-    */
-    .quick-link-text{
-      color: white;
-      font-family: Roboto;
-      font-size: 18px;
-    }
-
-
-
-
-  /*
-  Changes mouse to a pointer when hovered on and underlines the text
-  */
-  .home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
-  .contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
-  .thread-image:hover, .equalizer-image:hover, .movie-image:hover,
-  .lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    transition: .15s;
-  }
-
-
-
-
-</style>
-
-
-
-
-
-
 <html>
   <head>
     <title>Mia Larkin | Concrete Canoe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="concrete-canoe.css">
   </head>
   <body class="body">
 
@@ -211,8 +69,112 @@
 
 
 
-    
 
+    <!--
+      This creates the intro of the concrete-canoe page
+    -->
+      <div class="concrete-canoe-intro">
+        <div class="intro-text">
+          <p>
+            Concrete Canoe 
+          </p>
+        </div>
+        <div class="scarf">
+          <image src="concrete-canoe-images/gudetama-scarf.png"></image>
+        </div>
+      </div>
+
+
+
+      <!--
+        Creates the "What is Concrete Canoe" section
+      -->
+      <div class="what-is">
+        <div class="blurb">
+          <p>
+            Concrete Canoe is a club where we build a canoe out of concrete! It's not as simple as it seems though! The challenge is to 
+            deliver an appropriate concrete design mix in accordance with the rules, choose the best type and amount of reinforcement,
+            build the canoe with a consistent process, write-up an in-depth design paper, give a panel presentation to judges, and race against other teams
+            in the canoe we make!    
+          </p>
+        </div>
+        <div class="infographic">
+          <image src="concrete-canoe-images/concrete-canoe-infographic.png"></image>
+          <p>
+            An inforgraphic made by another E-Board Member (Logo Drawn by Me!)
+          </p>
+        </div>
+      </div>
+
+
+      <!--
+        Creates the images section of concrete canoe
+      -->
+      <div class="my-involvement">
+        <div class="grid">
+          <div class="my-involvement-text">
+            <p>
+              The Beginning:
+            </p>
+            <p1>
+              As current Vice-President of the club, I put a lot of effort and time into the club's work and enjoy doing it! 
+              When I joined, the club was recovering from COVID so we spent most of the first year trying to promote and recover the team!
+              The effort on behalf of all of the E-Board payed off as the team almost tripled from the previous year!  
+            </p1>
+          </div>
+          <div class="demolding">
+            <image src="concrete-canoe-images/demolding.jpg"></image>
+          </div>
+          <div class="newsletter">
+            <image src="concrete-canoe-images/newsletter.png"></image>
+          </div>
+          <div class="mixing">
+            <image src="concrete-canoe-images/mixing.jpg"></image> 
+          </div>
+          <div class="sticker">
+            <image src="concrete-canoe-images/sticker.png"></image>
+          </div>
+          <div class="my-involvement-text">
+            <p>
+              Now:
+            </p>
+            <p2>
+              In my current role, I plan a lot of meetings, maintain contact with the club members, reach out to Alumni, lead and 
+              mentor junior members, and promte an overall fun and productive environment! On the project side, I have leaned more into the
+              graphics side of things like creating stickers, event images, drawing covers, and creating and sending out newletters. More than 
+              that, however, I've had a lot of hands on experience with building the canoe and have spent a lot of time on the professional design 
+              paper!  
+            </p2>
+          </div>
+          <div class="cover">
+            <image src="concrete-canoe-images/cover.png"></image>
+          </div>
+          <div class="mold">
+            <image src="concrete-canoe-images/mold.jpg"></image>
+          </div>
+          <div class="shell">
+            <image src="concrete-canoe-images/shell.jpg"></image>
+          </div>
+        </div>
+        <div class="future">
+          <p>
+            The Future:
+          </p>
+          <p1>
+            2024 is the first year, since I've joined, that we'll be competing and we're putting in a lot of effort in hopes of placing! With
+            the help of our graduate advisor, we've been preparing the whole year and are still passionatly working on our deliverables. For now,
+            all we can do is prepare for what's next! Wish us luck!    
+          </p1>
+        </div>
+        </div>
+
+
+        <!--
+          This creates the closing image section
+        -->
+        <div class="closing-image">
+          <image src="concrete-canoe-images/concrete-canoe.jpeg"></image>
+        </div>
 
 
 
