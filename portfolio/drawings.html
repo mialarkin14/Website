@@ -1,153 +1,11 @@
 <!DOCTYPE html>
-
-
-
-
-<style>
-
-/*
-  Sets whole website background to be blue with no margins 
-  */
-  .body{
-    background-color: #bef1f7;
-    margin: 0;
-  }
-  
-
-
-  /*
-  Header/ Toolbar CSS
-  */
-    /*
-    Creates a header with padding
-    */
-    .header{
-      background-color: #69c0e2;
-      padding: 10px;
-    }
-
-    /*
-    Creates a toolbar using a grid that has 8 columns with certain specifications 
-    */
-    .toolbar{
-      vertical-align: top;
-      background-color: #69c0e2;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
-      column-gap: 10px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /*
-    Logo specifications to align it to the left 
-    */
-    .logo{
-      vertical-align: top;
-      width: 90px;
-      height: 90px;
-      margin-left: 80px;
-      margin-right: 200px;
-    }
-
-    /*
-    Outside logo specifications to align them to the right
-    */
-    .git-logo, .insta-logo{
-      width: 40px;
-      height: 40px;
-    }
-
-      /*
-      Outside logo specification for Linkdin as imported image has differenet specifications than above 
-      */
-    .link-logo{
-      width: 30px;
-      height: 30px;
-    }
-    
-    /*
-    Sets toolbar buttons to have certain specifications
-    */
-    .home-b, .about-b, .portfolio-b, .contact-b{
-      background-color: #69c0e2;
-      border: none;
-      color: white;
-      font-family: Roboto;
-      font-size: 18px;
-    }
-
- 
-
- /*
-  Footer CSS
-  */
-    /*
-    Creates a footer with padding
-    */
-    .footer{
-      background-color: #69c0e2;
-      padding: 50px;
-    }
-
-    /*
-    Creates a quick-access using a grid  
-    */
-    .quick-access{
-      vertical-align: top;
-      background-color: #69c0e2;
-      display: grid;
-      grid-template-columns: 1fr 3fr; 
-    }
-
-    /*
-    Creates quick-links grid
-    */
-    .quick-links-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /*
-    Customizes quick-link text
-    */
-    .quick-link-text{
-      color: white;
-      font-family: Roboto;
-      font-size: 18px;
-    }
-
-
-
-
-  /*
-  Changes mouse to a pointer when hovered on and underlines the text
-  */
-  .home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
-  .contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
-  .thread-image:hover, .equalizer-image:hover, .movie-image:hover,
-  .lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    transition: .15s;
-  }
-
-
-
-
-</style>
-
-
-
-
-
-
 <html>
   <head>
     <title>Mia Larkin | Drawings</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="drawings.css">
   </head>
   <body class="body">
 
@@ -212,6 +70,83 @@
 
 
     
+
+    <!--
+      This creates the intro title to the drawings portfolio
+    -->
+    <div class="drawing-grid">
+      <div class="drawing-title">
+        <p>
+          Drawings
+        </p>
+      </div>
+      <div class="gudetama-draw">
+        <image src="drawings-images/gudetama-drawing.png"></image>
+      </div>
+    </div>
+
+
+    <!--
+      This creates the drawings gallery 
+    -->
+    <div class="gallery">
+      <div class="beth">
+        <image src="drawings-images/beth.jpg"></image>
+      </div>
+      <div class="me">
+        <image src="drawings-images/me.jpg"></image>
+      </div>
+      <div class="piglet">
+        <image src="drawings-images/piglet.jpg"></image>
+      </div>
+      <div class="portrait">
+        <image src="drawings-images/portrait.jpg"></image>
+      </div>
+      <div class="house-of-dragon">
+        <image src="drawings-images/house-of-dragon.jpg"></image>
+      </div>
+      <div class="music-box">
+        <image src="drawings-images/music-box.jpg"></image> 
+      </div>
+      <div class="tear">
+        <image src="drawings-images/tear.jpg"></image>
+      </div>
+      <div class="mountain-lion">
+        <image src="drawings-images/mountain-lion.jpg"></image>
+      </div>
+      <div class="bubble">
+        <image src="drawings-images/bubble.jpg"></image>
+      </div>
+      <div class="piano">
+        <image src="drawings-images/piano.jpg"></image>
+      </div>
+      <div class="iu">
+        <image src="drawings-images/iu.jpg"></image>
+      </div>
+      <div class="toad">
+        <image src="drawings-images/toad.jpg"></image>
+      </div>
+      <div class="hi">
+        <image src="drawings-images/hi.jpg"></image>
+      </div>
+      <div class="dragon"> 
+        <image src="drawings-images/dragon.jpg"></image>
+      </div>
+      <div class="pip-kace">
+        <image src="drawings-images/pip-kace.jpg"></image>
+      </div>
+      <div class="sky">
+        <image src="drawings-images/sky.jpg"></image>
+      </div>
+     
+      
+      
+      
+      
+      
+      
+      
+    </div>
 
 
 

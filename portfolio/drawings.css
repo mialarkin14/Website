@@ -1,0 +1,254 @@
+/*
+Stylesheet for the drawing portfolio page CSS
+*/
+
+
+
+
+/*
+  Sets whole website background to be blue with no margins 
+  */
+  .body{
+    background-color: #bef1f7;
+    margin: 0;
+  }
+  
+
+
+  /*
+  Header/ Toolbar CSS
+  */
+    /*
+    Creates a header with padding
+    */
+    .header{
+      background-color: #69c0e2;
+      padding: 10px;
+    }
+
+    /*
+    Creates a toolbar using a grid that has 8 columns with certain specifications 
+    */
+    .toolbar{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr .5fr .5fr .5fr; 
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*
+    Logo specifications to align it to the left 
+    */
+    .logo{
+      vertical-align: top;
+      width: 90px;
+      height: 90px;
+      margin-left: 80px;
+      margin-right: 200px;
+    }
+
+    /*
+    Outside logo specifications to align them to the right
+    */
+    .git-logo, .insta-logo{
+      width: 40px;
+      height: 40px;
+    }
+
+      /*
+      Outside logo specification for Linkdin as imported image has differenet specifications than above 
+      */
+    .link-logo{
+      width: 30px;
+      height: 30px;
+    }
+    
+    /*
+    Sets toolbar buttons to have certain specifications
+    */
+    .home-b, .about-b, .portfolio-b, .contact-b{
+      background-color: #69c0e2;
+      border: none;
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+ 
+
+
+
+
+/*
+Drawing section CSS
+*/
+    /*
+    Customizes the intro of the drawing page
+    */
+    .drawing-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 80px;
+    }
+
+    /*
+    Centers objects using a flexbox
+    */
+    .drawing-title, .gudetama-draw{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*
+    Customizes the title
+    */
+    .drawing-title p{
+        font-family: Roboto;
+        font-size: 60px;
+        color: #797979;
+        font-weight: bold;
+    }
+
+    /*
+    Customizes the gudetama
+    */
+    .gudetama-draw img{
+        width: 250px;
+    }
+
+
+
+
+
+
+
+/*
+Gallery section CSS
+*/
+    /*
+    Sets gallery to be a 3 column grid
+    */
+    .gallery{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 120px;
+      row-gap: 40px;
+      column-gap: 30px;
+    }
+
+    
+    /*
+    Center the images in their div using a flexbox
+    */
+    .beth, .hi, .toad, .sky, .pip-kace, .iu, .tear, .music-box, .dragon, .bubble,
+    .me, .piano, .piglet, .portrait, .house-of-dragon, .mountain-lion{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    /*
+    Customizes each image
+    */
+    .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img{
+      width: 400px;
+    }
+    .iu img{
+      width: 350px;
+    }
+    .dragon img, .bubble img{
+      width: 300px;
+    }
+    .me img{      
+      height: 480px;     
+    }
+    .piano img{
+      width: 500px;     
+    }
+    .piglet img{
+      width: 350px;
+    }
+    .portrait img{
+      width: 350px;     
+    }
+    .house-of-dragon img{
+      height: 450px;
+    }
+    .mountain-lion img{
+      height: 400px;      
+    }
+    .tear img{
+      width: 300px;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+ /*
+  Footer CSS
+  */
+    /*
+    Creates a footer with padding
+    */
+    .footer{
+      background-color: #69c0e2;
+      padding: 50px;
+    }
+
+    /*
+    Creates a quick-access using a grid  
+    */
+    .quick-access{
+      vertical-align: top;
+      background-color: #69c0e2;
+      display: grid;
+      grid-template-columns: 1fr 3fr; 
+    }
+
+    /*
+    Creates quick-links grid
+    */
+    .quick-links-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*
+    Customizes quick-link text
+    */
+    .quick-link-text{
+      color: white;
+      font-family: Roboto;
+      font-size: 18px;
+    }
+
+
+
+
+  /*
+  Changes mouse to a pointer when hovered on and underlines the text
+  */
+  .home-b:hover, .about-b:hover, .portfolio-b:hover, .learn-more:hover, 
+  .contact-b:hover,.logo:hover, .git-logo:hover, .link-logo:hover, .insta-logo:hover,
+  .thread-image:hover, .equalizer-image:hover, .movie-image:hover,
+  .lmb:hover, .explore-b:hover, .experinces-button:hover, .actual-email:hover, .quick-link-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .15s;
+  }
+
+
