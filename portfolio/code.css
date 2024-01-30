@@ -1,8 +1,6 @@
 /*
-Stylesheet for the code portfolio page CSS
+Stylesheet for the drawing portfolio page CSS
 */
-
-
 
 
 
@@ -83,21 +81,23 @@ Stylesheet for the code portfolio page CSS
 
 
 
+
 /*
-Code section CSS
+Drawing section CSS
 */
     /*
-    Customizes the intro of the code page
+    Customizes the intro of the drawing page
     */
-    .code-intro{
+    .drawing-grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-top: 80px;
     }
 
     /*
     Centers objects using a flexbox
     */
-    .code-title, .gudetama-code, .project{
+    .drawing-title, .gudetama-draw{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -107,7 +107,7 @@ Code section CSS
     /*
     Customizes the title
     */
-    .code-title p{
+    .drawing-title p{
         font-family: Roboto;
         font-size: 60px;
         color: #797979;
@@ -115,56 +115,74 @@ Code section CSS
     }
 
     /*
-    Makes the code a 3 column grid
+    Customizes the gudetama
     */
-    .projects-grid-code{
+    .gudetama-draw img{
+        width: 250px;
+    }
+
+
+
+
+
+
+
+/*
+Gallery section CSS
+*/
+    /*
+    Sets gallery to be a 3 column grid
+    */
+    .gallery{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      padding-left: 80px;
-      padding-right: 80px;
-      padding-top: 40px;
-      padding-bottom: 80px;
-      column-gap: 40px;
+      padding: 20px;
+      row-gap: 40px;
+      column-gap: 30px;
     }
 
-    /*
-    Customize each project's image
-    */
-    .project img{
-      width: 300px;
-      height: 300px;
-      padding: 10px;
-      border-radius: 20px;
-      background-color: #ddfbff;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    /*
-    Customizes the text below each project
-    */
-    .project p1{
-      font-family: Roboto;
-      font-size: 25px;
-      color: #797979;
-      font-weight: 500;
-    }
     
-    .project p{
-      font-family: Roboto;
-      font-size: 20px;
-      color: #797979;
-      margin-bottom: 80px;
+    /*
+    Center the images in their div using a flexbox
+    */
+    .beth, .hi, .toad, .sky, .pip-kace, .iu, .tear, .music-box, .dragon, .bubble,
+    .me, .piano, .piglet, .portrait, .house-of-dragon, .mountain-lion{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
+    
     /*
-    Customizes the links to github
+    Customizes each image
     */
-    .project p1:hover, .project img:hover{
-      cursor: pointer;
-      text-decoration: underline;
-      transition: .15s;
+    .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img, .piano img{
+      width: 300px;
     }
+    .iu img{
+      width: 250px;
+    }
+    .dragon img, .bubble img{
+      width: 250px;
+    }
+    .me img{      
+      height: 380px;     
+    }
+    .piglet img, .portrait img{
+      width: 250px;
+    }
+    .house-of-dragon img{
+      height: 350px;
+    }
+    .mountain-lion img{
+      height: 300px;      
+    }
+    .tear img{
+      width: 200px;
+    }
+  
+
+
 
 
 
@@ -226,3 +244,5 @@ Code section CSS
     text-decoration: underline;
     transition: .15s;
   }
+
+
