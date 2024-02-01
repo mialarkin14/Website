@@ -146,7 +146,7 @@ Gallery section CSS
     Center the images in their div using a flexbox
     */
     .beth, .hi, .toad, .sky, .pip-kace, .iu, .tear, .music-box, .dragon, .bubble,
-    .me, .piano, .piglet, .portrait, .house-of-dragon, .mountain-lion{
+    .me, .piano, .piglet, .portrait, .house-of-dragon, .mountain-lion, .date{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -179,6 +179,15 @@ Gallery section CSS
     }
     .tear img{
       width: 200px;
+    }
+    
+    /*
+    Customizes the dates underneath the drawings
+    */
+    .date{
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 500;
     }
   
 
