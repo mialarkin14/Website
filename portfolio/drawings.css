@@ -152,33 +152,51 @@ Gallery section CSS
       align-items: center;
     }
 
+    /*
+    When hovered, enlarge drawing
+    */
+    .beth img:hover, .hi img:hover, .toad img:hover, .sky img:hover, .pip-kace img:hover, .iu img:hover, .tear  img:hover, 
+    .music-box img:hover, .dragon img:hover, .bubble img:hover, .me img:hover, .piano img:hover, .piglet img:hover, 
+    .portrait img:hover, .house-of-dragon img:hover, .mountain-lion img:hover, .date img:hover{
+      transform:scale(1.5);
+      
+    }
+
     
     /*
     Customizes each image
     */
     .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img, .piano img{
       width: 300px;
+      transition: transform 1s ease-in-out;
     }
     .iu img{
       width: 250px;
+      transition: transform 1s ease-in-out;
     }
     .dragon img, .bubble img{
       width: 250px;
+      transition: transform 1s ease-in-out;
     }
     .me img{      
       height: 380px;     
+      transition: transform 1s ease-in-out;
     }
     .piglet img, .portrait img{
       width: 250px;
+      transition: transform 1s ease-in-out;
     }
     .house-of-dragon img{
       height: 350px;
+      transition: transform 1s ease-in-out;
     }
     .mountain-lion img{
-      height: 300px;      
+      height: 300px; 
+      transition: transform 1s ease-in-out;     
     }
     .tear img{
       width: 200px;
+      transition: transform 1s ease-in-out;
     }
     
     /*
