@@ -97,7 +97,7 @@ Code section CSS
     /*
     Centers objects using a flexbox
     */
-    .code-title, .gudetama-code, .project{
+    .code-title, .gudetama-code, .project, .project-title, .project-blurb{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -143,14 +143,14 @@ Code section CSS
     /*
     Customizes the text below each project
     */
-    .project p1{
+    .project-title p{
       font-family: Roboto;
       font-size: 25px;
       color: #797979;
       font-weight: 500;
     }
-    
-    .project p{
+
+    .project-blurb p{
       font-family: Roboto;
       font-size: 20px;
       color: #797979;
@@ -160,11 +160,15 @@ Code section CSS
     /*
     Customizes the links to github
     */
-    .project p1:hover, .project img:hover{
+    .project-title p:hover, .project img:hover{
       cursor: pointer;
       text-decoration: underline;
       transition: .15s;
     }
+
+
+
+
 
 
 
