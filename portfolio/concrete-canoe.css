@@ -309,6 +309,32 @@ CSS Closing Section
         width: 1300px;
     }
 
+    
+    /*
+    Customizes the position of the button
+    */
+    .download{
+      padding-top: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    /*
+    Customizes actual experinces button
+    */
+    .experinces-button{
+      color: white;
+      background-color: black;
+      font-family: Roboto;
+      font-size: 22px;
+      border: none;
+      border-radius: 8px;
+      padding: 40px;
+      display: block;
+    }
+
 
 
 

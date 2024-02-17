@@ -146,7 +146,8 @@ Gallery section CSS
     Center the images in their div using a flexbox
     */
     .beth, .hi, .toad, .sky, .pip-kace, .iu, .tear, .music-box, .dragon, .bubble,
-    .me, .piano, .piglet, .portrait, .house-of-dragon, .mountain-lion, .date{
+    .me, .piano, .piglet, .portrait, .house-of-dragon, .mountain-lion, .date, .book2, .hooky, .meliodas,
+    .evergarden, .shoe, .book1{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -157,7 +158,8 @@ Gallery section CSS
     */
     .beth img:hover, .hi img:hover, .toad img:hover, .sky img:hover, .pip-kace img:hover, .iu img:hover, .tear  img:hover, 
     .music-box img:hover, .dragon img:hover, .bubble img:hover, .me img:hover, .piano img:hover, .piglet img:hover, 
-    .portrait img:hover, .house-of-dragon img:hover, .mountain-lion img:hover, .date img:hover{
+    .portrait img:hover, .house-of-dragon img:hover, .mountain-lion img:hover, .date img:hover, .book2 img:hover, .hooky img:hover, 
+    .meliodas img:hover, .evergarden img:hover, .shoe img:hover, .book1 img:hover{
       transform:scale(1.5);
       
     }
@@ -166,7 +168,8 @@ Gallery section CSS
     /*
     Customizes each image
     */
-    .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img, .piano img{
+    .beth img, .hi img, .toad img, .sky img, .pip-kace img, .music-box img, .piano img, .book2 img, .meliodas img, 
+    .evergarden img, .shoe img, .book1 img{
       width: 300px;
       transition: transform 1s ease-in-out;
     }
@@ -182,7 +185,7 @@ Gallery section CSS
       height: 380px;     
       transition: transform 1s ease-in-out;
     }
-    .piglet img, .portrait img{
+    .piglet img, .portrait img, .hooky img{
       width: 250px;
       transition: transform 1s ease-in-out;
     }
