@@ -148,21 +148,33 @@ Electronics section CSS
         background-color: #ddfbff;
     }
 
+
+    /*
+    Sets up the post-net-xs3 project
+    */
+    .post-net-xs3{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 100px;
+      column-gap: 20%;
+      background-color: #bcecff;
+    }
+
     /*
     Customizes text
     */
-    .information p1{
+    .information p1, .information2 p1{
         font-family: Roboto;
         font-size: 40px;
         color: #797979;
         font-weight: 500;
     }
-    .information p{
+    .information p, .information2 p{
         font-family: Roboto;
         font-size: 20px;
         color: #797979;
     }
-    .audio-equalizer-pic p{
+    .audio-equalizer-pic p, .post-net-pic p{
         font-family: Roboto;
         font-size: 20px;
         color: #797979;
@@ -176,9 +188,18 @@ Electronics section CSS
         width: 500px;
         object-fit: contain;
     }
+    .post-net-pic img{
+      width: 500px;
+      object-fit: contain;
+    }
     .information img{
         height: 450px;
     }
+    .information2 img{
+      width: 450px;
+    }
+    
+
 
     /*
     Customizes the download button
